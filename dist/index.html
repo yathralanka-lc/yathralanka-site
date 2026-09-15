@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Meet the Ladies' College team behind YathraLanka at VisionEX Grand Finale 2026." />
+    <title>YathraLanka | Ladies' College at VisionEX</title>
+    <link rel="icon" type="image/png" href="assets/yathralanka-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root { --ink:#092c52; --blue:#1866b5; --sky:#e9f5ff; --red:#e63946; --gold:#ffbf38; --paper:#fffdf8; --muted:#536274; --line:#dbe6f1; }
+      * { box-sizing:border-box; }
+      html { scroll-behavior:smooth; }
+      body { margin:0; font-family:Manrope, Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color:var(--ink); background:var(--paper); }
+      a { color:inherit; }
+      .shell { max-width:1180px; margin:0 auto; padding:0 24px; }
+      .notice { background:var(--ink); color:#fff; font-size:.92rem; text-align:center; padding:10px 18px; }
+      .notice strong { color:var(--gold); }
+      header { background:#fff; border-bottom:1px solid var(--line); position:sticky; top:0; z-index:10; }
+      .nav { min-height:76px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+      .brand { display:flex; align-items:center; gap:11px; color:#0d6670; font-family:Cinzel, Georgia, serif; font-size:1.12rem; font-weight:900; text-decoration:none; letter-spacing:.02em; }
+      .brand img { width:48px; height:48px; object-fit:contain; }
+      .nav-links { display:flex; align-items:center; gap:22px; font-size:.93rem; font-weight:700; }
+      .nav-links a { text-decoration:none; }
+      .nav-links a:hover { color:var(--blue); }
+      .hero { overflow:hidden; background:linear-gradient(135deg, #064e59 0%, #08707c 58%, #14909a 100%); color:#fff; }
+      .hero-grid { min-height:625px; display:grid; grid-template-columns:1.2fr .8fr; gap:46px; align-items:center; padding:80px 0; }
+      .eyebrow { display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,.13); border:1px solid rgba(255,255,255,.3); border-radius:999px; padding:8px 13px; font-size:.77rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
+      .yathra-lockup { display:flex; align-items:center; gap:22px; margin:22px 0 14px; }
+      .yathra-lockup img { width:clamp(140px,18vw,220px); aspect-ratio:1; object-fit:contain; filter:drop-shadow(0 14px 18px rgba(0,0,0,.28)); }
+      .yathra-name { color:#ffc14b; font-family:Cinzel, Georgia, serif; font-size:clamp(2.7rem,5.1vw,5rem); font-weight:900; line-height:.96; letter-spacing:.02em; }
+      .yathra-tagline { color:#ffc14b !important; font-size:clamp(1rem,2vw,1.4rem) !important; font-weight:900; line-height:1.25 !important; margin:13px 0 0 !important; }
+      h1 { max-width:760px; font-size:clamp(2.15rem,4.1vw,3.75rem); line-height:1.03; letter-spacing:-.055em; margin:24px 0 16px; }
+      .hero p { max-width:640px; color:#e8f4ff; font-size:1.12rem; line-height:1.65; margin:0 0 28px; }
+      .actions { display:flex; flex-wrap:wrap; gap:12px; }
+      .button { display:inline-flex; align-items:center; justify-content:center; min-height:49px; padding:0 20px; border-radius:12px; font-size:.96rem; font-weight:850; text-decoration:none; border:2px solid transparent; cursor:pointer; font-family:inherit; transition:transform .18s ease, box-shadow .18s ease; }
+      .button:hover { transform:translateY(-2px); box-shadow:0 10px 22px rgba(0,0,0,.16); }
+      .button.primary { background:var(--gold); color:#162438; }
+      .button.outline { color:#fff; border-color:rgba(255,255,255,.72); background:transparent; }
+      .hero-art { position:relative; min-height:410px; display:grid; place-items:center; }
+      .hero-art:before { content:""; width:360px; height:360px; border-radius:50%; background:rgba(255,193,75,.95); position:absolute; transform:rotate(12deg); opacity:.98; }
+      .hero-art:after { content:""; width:300px; height:300px; border:2px solid rgba(255,255,255,.65); border-radius:50%; position:absolute; transform:translate(38px,-37px); }
+      .hero-logo { z-index:1; position:relative; width:min(100%,410px); object-fit:contain; filter:drop-shadow(0 24px 25px rgba(0,0,0,.33)); }
+      .hero-art-caption { z-index:2; position:absolute; bottom:0; background:rgba(5,57,65,.86); border:1px solid rgba(255,255,255,.22); border-radius:999px; padding:10px 16px; font-size:.86rem; font-weight:800; }
+      section { padding:88px 0; }
+      .section-label { color:var(--red); font-size:.78rem; font-weight:900; letter-spacing:.11em; text-transform:uppercase; }
+      h2 { margin:10px 0 14px; font-size:clamp(2rem,4vw,3.45rem); line-height:1.06; letter-spacing:-.055em; }
+      .intro { max-width:780px; color:var(--muted); font-size:1.08rem; line-height:1.7; }
+      .mission { background:linear-gradient(180deg,#eef8ff 0%,#fffdf8 100%); }
+      .mission-grid { display:grid; grid-template-columns:1fr 1fr; gap:22px; margin-top:34px; }
+      .mission-card { background:#fff; border:1px solid var(--line); border-radius:18px; padding:25px; }
+      .mission-card b { display:block; font-size:1.1rem; margin-bottom:8px; }
+      .mission-card p { margin:0; color:var(--muted); line-height:1.58; }
+      .team-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:18px; margin-top:38px; }
+      .member { background:#fff; border:1px solid var(--line); border-radius:18px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 6px 20px rgba(15,52,85,.05); }
+      .member img { width:100%; aspect-ratio:1 / 1.08; object-fit:cover; object-position:center top; background:#eaf1f8; }
+      .member-copy { padding:20px; }
+      .member-copy h3 { margin:0 0 3px; font-size:1.22rem; letter-spacing:-.03em; }
+      .role { color:var(--red); font-size:.82rem; font-weight:850; margin-bottom:12px; }
+      .member-copy p { color:var(--muted); font-size:.93rem; line-height:1.58; margin:0; }
+      .event { background:var(--ink); color:#fff; }
+      .event-grid { display:grid; grid-template-columns:.9fr 1.1fr; align-items:center; gap:54px; }
+      .event-image { width:100%; max-width:380px; margin:auto; border-radius:20px; box-shadow:0 18px 35px rgba(0,0,0,.25); display:block; }
+      .event h2 { max-width:660px; }
+      .event p { color:#d9ebfa; font-size:1.05rem; line-height:1.65; max-width:600px; }
+      .event-details { display:flex; flex-wrap:wrap; gap:10px; margin:23px 0; }
+      .pill { border:1px solid rgba(255,255,255,.25); background:rgba(255,255,255,.08); border-radius:10px; padding:10px 12px; font-weight:760; font-size:.9rem; }
+      .access-grid { display:grid; grid-template-columns:1.15fr repeat(2,.925fr); gap:16px; margin-top:30px; }
+      .access { border:1px solid var(--line); border-radius:18px; padding:25px; background:#fff; min-height:215px; display:flex; flex-direction:column; align-items:flex-start; }
+      .access.web { background:linear-gradient(150deg,#0b3b73,#1667b7); color:#fff; border:0; }
+      .access h3 { margin:0 0 8px; font-size:1.3rem; }
+      .access p { margin:0 0 20px; color:var(--muted); line-height:1.5; }
+      .access.web p { color:#d9ebfa; }
+      .access .button { margin-top:auto; }
+      .status { display:inline-block; margin-top:auto; color:var(--red); font-size:.82rem; font-weight:850; }
+      footer { background:#071f39; color:#cbdcec; padding:32px 0; font-size:.9rem; }
+      .footer-row { display:flex; justify-content:space-between; gap:16px; align-items:center; }
+      .footer-logos { display:flex; align-items:center; gap:13px; }
+      .footer-logos img { max-height:38px; max-width:110px; object-fit:contain; background:#fff; border-radius:6px; padding:3px; }
+      @media (max-width:900px) { .hero-grid,.event-grid { grid-template-columns:1fr; } .hero-grid { padding:68px 0; } .hero-art { min-height:290px; } .hero-art:before { width:270px; height:270px; } .team-grid { grid-template-columns:repeat(2,1fr); } .access-grid { grid-template-columns:1fr; } }
+      @media (max-width:620px) { .shell { padding:0 18px; } .nav-links { display:none; } section { padding:62px 0; } .hero-grid { min-height:unset; padding:48px 0; gap:15px; } .yathra-lockup { gap:13px; } .yathra-lockup img { width:112px; } .yathra-name { font-size:2.25rem; } .hero-art { display:none; } .mission-grid,.team-grid { grid-template-columns:1fr; } .event-grid { gap:28px; } .footer-row { align-items:flex-start; flex-direction:column; } }
+    </style>
+  </head>
+  <body>
+    <div class="notice"><strong>VisionEX Grand Finale:</strong> 15 September 2026 · 2:00 PM onwards · Lotus Hall, BMICH</div>
+    <header><div class="shell nav"><a class="brand" href="#top"><img src="assets/yathralanka-logo.png" alt="YathraLanka logo" />YathraLanka</a><nav class="nav-links" aria-label="Main navigation"><a href="#vision">Our vision</a><a href="#team">The team</a><a href="#visionex">VisionEX</a><a href="#access">Try YathraLanka</a></nav></div></header>
+    <main id="top">
+      <section class="hero"><div class="shell hero-grid"><div><span class="eyebrow">Ladies' College · VisionEX Grand Finale 2026</span><div class="yathra-lockup"><img src="assets/yathralanka-logo.png" alt="YathraLanka logo" /><div><div class="yathra-name">YATHRALANKA</div><p class="yathra-tagline">Play the game. Protect the past.</p></div></div><h1>Technology with a purpose. Heritage with a future.</h1><p>We are the Ladies' College team behind YathraLanka: a student-built heritage experience that helps people explore cultural places with curiosity, care and responsibility.</p><div class="actions"><a class="button primary" href="https://yathralanka.vercel.app" target="_blank" rel="noopener">Open YathraLanka web app</a><a class="button outline" href="#team">Meet our team</a></div></div><div class="hero-art"><img class="hero-logo" src="assets/yathralanka-logo.png" alt="YathraLanka logo" /><div class="hero-art-caption">A heritage quest for a new generation</div></div></div></section>
+      <section id="vision" class="mission"><div class="shell"><div class="section-label">Our vision</div><h2>Make every heritage visit more engaging—and more responsible.</h2><p class="intro">YathraLanka connects heritage, learning and technology. It transforms a visit into a guided experience: visitors discover a place, verify their presence, learn its story and reflect on how careful behaviour can help protect it. Our long-term vision is to bring this approach beyond Sri Lanka, creating thoughtful heritage experiences for communities and travellers around the world.</p><div class="mission-grid"><article class="mission-card"><b>Connect</b><p>Bring visitors closer to the stories, people and significance behind cultural places.</p></article><article class="mission-card"><b>Gamify with purpose</b><p>Use guided challenges and learning activities to make exploration memorable, informed and enjoyable.</p></article><article class="mission-card"><b>Encourage care</b><p>Promote respectful visiting habits that support the preservation of heritage for future generations.</p></article><article class="mission-card"><b>Grow globally</b><p>Begin with Sri Lankan heritage and build a model that can be adapted for cultural sites worldwide.</p></article></div></div></section>
+      <section id="team"><div class="shell"><div class="section-label">The Ladies' College team</div><h2>Four students. One shared vision.</h2><p class="intro">VisionEX gave us a platform to turn research, design, communication and technology into an idea with real social value.</p><div class="team-grid"><article class="member"><img src="assets/anishka.jpg" alt="Anishka Gamage" /><div class="member-copy"><h3>Anishka Gamage</h3><div class="role">Grade 13 · Team Captain</div><p>Anishka led the team’s research into the problem, its impact and its significance. She coordinated the group’s work and helped turn a broad idea into a clear, shared vision.</p></div></article><article class="member"><img src="assets/sajiniya.jpg" alt="Sajiniya Nadarajah" /><div class="member-copy"><h3>Sajiniya Nadarajah</h3><div class="role">Grade 13 · Research & Presentation</div><p>Passionate about technology and problem-solving, Sajiniya drove contextual research and shaped the presentation used to communicate YathraLanka to the judges.</p></div></article><article class="member"><img src="assets/pabadhi.jpeg" alt="Pabadhi Garusinghe" /><div class="member-copy"><h3>Pabadhi Garusinghe</h3><div class="role">Grade 12 · Research & Innovation</div><p>Pabadhi brings a strong academic foundation and a well-rounded perspective shaped by extracurricular involvement. She is inspired by technology’s potential to serve people, heritage and country.</p></div></article><article class="member"><img src="assets/hiruni.jpg" alt="Hiruni Dias" /><div class="member-copy"><h3>Hiruni Dias</h3><div class="role">Grade 12 · Marketing & Presentation</div><p>Hiruni brings creativity and energy to the team through marketing and presentation. Her interests in sport, art and new experiences help her communicate the project with warmth and confidence.</p></div></article></div></div></section>
+      <section id="visionex" class="event"><div class="shell event-grid"><img class="event-image" src="assets/visionex-invitation.jpeg" alt="VisionEX Grand Finale invitation" /><div><div class="section-label" style="color:var(--gold)">VisionEX Grand Finale</div><h2>Celebrating young innovators at IIT.</h2><p>VisionEX is a showcase of innovation and technology by school students from the Colombo District, organised by the Informatics Institute of Technology. We are delighted to present YathraLanka at the Grand Finale and award ceremony.</p><div class="event-details"><span class="pill">15 September 2026</span><span class="pill">From 2:00 PM onwards</span><span class="pill">Lotus Hall · BMICH</span></div><p style="font-size:.94rem">We look forward to celebrating the creativity, hard work and ambition of young innovators.</p></div></div></section>
+      <section id="access"><div class="shell"><div class="section-label">Explore the project</div><h2>Experience YathraLanka your way.</h2><p class="intro">The web app is ready to explore now. Native Android and iOS releases will be added here once their public distribution packages are ready.</p><div class="access-grid"><article class="access web"><h3>YathraLanka web app</h3><p>Open the live browser experience to explore heritage sites, quizzes, verification and community features.</p><a class="button primary" href="https://yathralanka.vercel.app" target="_blank" rel="noopener">Open web app</a></article><article class="access"><h3>Android app</h3><p>A downloadable Android version is being prepared for public release.</p><span class="status">Coming soon</span></article><article class="access"><h3>iOS app</h3><p>An iPhone version is being prepared for TestFlight and App Store distribution.</p><span class="status">Coming soon</span></article></div></div></section>
+    </main>
+    <footer><div class="shell footer-row"><div>© 2026 YathraLanka · Ladies' College, Colombo 07</div><div class="footer-logos"><img src="assets/ladies-college-crest.png" alt="Ladies' College" /><img src="assets/iit-logo.jpg" alt="Informatics Institute of Technology" /></div></div></footer>
+  </body>
+</html>
